@@ -1,0 +1,68 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark-cyan:hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue:hsl(229, 23%, 23%);
+    --dark-grayish-blue:hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+hr {
+    
+}
+body {
+    background-color:var(--dark-cyan) ;
+    margin: 2rem;
+    font-weight: 700;
+    font-size:18px ;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+
+}
+.card-content {
+    /* display: flex;
+    flex-direction:column; */
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-content: center;
+    /* justify-content: center; */
+}
+.avator {
+    align-self: center;
+    justify-self: center;
+    transform: translateY(-50%);  
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid white; 
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    
+}
+.insta_stats {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fade {
+    color: var(--dark-gray);
+    font-weight: 400;
+
+}
